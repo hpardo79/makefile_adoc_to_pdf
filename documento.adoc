@@ -1,0 +1,119 @@
+= DOCUMENTO (PLANTILLA)
+// declarar las variables para el documento
+:imagesdir: ./images
+:notitle:
+:lang: es
+include::attributes-es.adoc[]
+
+// se puede incluir un logo de cabecera
+image::logo.png[align=right]
+
+[.text-center]
+*DOCUMENTO*
+
+// utilizar tablas para ordenar contenido
+[cols="30%,10%,~", frame=none, grid=none]
+|===
+|      |Para:   |Destino
+|      |De:     |Remite
+|      |        |_Cargo_
+|      |Asunto: |Tema
+|      |Fecha:  |[día] [mes] [año]
+|===
+
+'''
+
+== Sección 1
+Texto aquí.
+
+=== Sección 1-1
+// utilizar tablas
+[cols=".^2a,3", frame=none, grid=none]
+|===
+|. Texto aquí.
+. Texto aqui.
+|image:img.jpg[width=200%, align=center]
+// Texto aquí.
+// Texto aquí.
+|===
+
+// tabla de ejemplo (un cronograma de trabajo)
+[caption="Ejemplo: Cronograma: "]  
+.Plan de trabajo
+[cols="1*^,2", frame=ends, grid=rows]
+|===
+|Día
+<|Detalle
+
+|Día 1 [día][mes][año]
+<|Actividad realizada
+
+|Día 2 [día][mes][año]
+<|Actividad realizada
+|===
+
+[source]
+--
+Para el salto de página utilizar <<<
+Para dejar un renglón vacío utilizar {empty} +
+--
+
+<<<
+{empty} +    
+
+== Sección 2
+=== Sección 2-1
+
+Se puede dar formato al texto
+* Texto aquí, *texto aquí*, _texto aquí_, [.underline]#texto aquí#, #texto aquí#...
+También se puede incluir fotos y texto breve (siguiente ejemplo incrustado en una tabla).
+
+[cols="2*^", frame=sides, grid=cols]
+|===
+|image:img.jpg[width=150%, align=center]
+<.^|Texto aquí.
+
+|image:img.jpg[width=150%, align=center]
+<.^|Más texto aquí.
+|===
+
+=== Sección 2-2
+
+* Texto aquí...
+
+Se puede ajustar el tamaño de las imagenes.
+
+.Disminuir el tamaño
+image::img.jpg[width=10%, align=center]
+
+.Aumentar el tamaño
+image::img.jpg[width=30%, align=center]
+
+<<<
+{empty} +    
+
+== Sección 3
+=== Sección 3-1
+
+. Texto aquí.
+. Texto aquí.
+
+// se pueden agregar notas
+[NOTE]
+.Notas adicionales
+Texto aquí.
+
+=== Sección 3-2
+
+== Sección 4
+=== Sección 4-1
+:figure-caption!:
+
+[source]
+--
+Para desactivar las etiquetas y los números de subtítulos en las imagenes :figure-caption!:
+--
+
+{empty} + 
+
+image::img.jpg[width=30%, align=left]
